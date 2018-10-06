@@ -8,6 +8,17 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
+if(process.env.JAWDB.URL){
+  connection = mysql.createConnection(process.env.JAWDB_URL);
+}else{
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: "root",
+    password: 'MS@Dc02830786',
+    database: 'burgers_db'
+  })
+}
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {
@@ -18,4 +29,5 @@ connection.connect(function(err) {
 });
 
 // Export connection for our ORM to use.
+connection.connect();
 module.exports = connection;
