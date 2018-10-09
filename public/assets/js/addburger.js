@@ -14,7 +14,7 @@ $(function(){
             data: newDevouredBurger
         }).then(
             function(){
-                console.log("changed" + id + id + "to", newDevouredBurger);
+                console.log("changed to", newDevouredBurger);
                 location.reload();
             }
         )
@@ -27,7 +27,7 @@ $(".insert-burger").on("submit", function(event){
 
     const newAddBurger = {
         name: $("#addburger").val().trim(),
-        devoured: false
+        // devoured: false
     };
     
     $.ajax("/api/burgers", {

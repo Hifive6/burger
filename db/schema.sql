@@ -1,6 +1,6 @@
 CREATE DATABASE burgers_db;
 USE burgers_db;
-ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'MS@Dc02830786';
+ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY '';
 CREATE TABLE burgers                                                   
 (
 	id int NOT NULL AUTO_INCREMENT,
