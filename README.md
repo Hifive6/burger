@@ -5,6 +5,8 @@
 <p>A Node, Express, Handlebars, and MySQL burger app that lets users input the names of burgers they'd like to eat... and then devour them! Please check out the launched app on Heroku </p>
 <link href=https://fast-bastion-84994.herokuapp.com/>
 
+[screenshot]("public/assets/css/img/burger.png")
+
 <strong><h2>Technologies used<h2></strong>
 <ul>
 <li>Node.js</li>
